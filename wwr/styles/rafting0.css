@@ -11,6 +11,34 @@
     --body-font: "Roboto", sans-serif;
 }
 
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+
+}
+
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+}
+
+header img {
+    width: 100px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+//
+
 
 * {
     box-sizing: border-box;
@@ -21,13 +49,6 @@
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
-}
-
-header,
-main,
-footer {
-    width: 840px;
-    margin: 0 auto;
 }
 
 h1,
@@ -70,30 +91,33 @@ h1 {
     color: #fff;
 }
 
-article {
+.hero article {
     position: absolute;
 }
 
 .hero article img {
     float: right;
     width: 300px;
-    border: 16px;
+    padding: 16px;
     margin: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
 }
 
-header {
-
-    margin: 1rem auto;
-    display: grid;
-    grid-template-columns: 120px 1fr 1fr;
+footer {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #ccc;
-    max-width: 1000px;
+    padding: 1rem;
+    background-color: var(--secondary-color);
 }
 
-nav {
+footer .socialmedia {
     display: flex;
-    justify-content: flex-end;
+    gap: 1rem;
+}
+
+footer .socialmedia img {
+    width: 24px;
+    height: 24px;
 }
