@@ -23,14 +23,48 @@ header, main, footer {
     margin: 0 auto;
 }
 
+nav, p, article {
+    margin: 16px;
+    padding: 8px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    align-items: center;
+
+}
+
+header img {
+    align-items: center;
+    margin: 0 auto;
+}
+ul {
+    display: flex;
+    list-style: none;
+}
+
+ul li {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+ul a { 
+    display: block;
+    color: var(--accent1-color);
+    padding: 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+ul a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
-}
-
-nav, p, section, article {
-    margin: 16px;
-    padding: 8px;
 }
 
 .socialmedia a {
@@ -39,12 +73,6 @@ nav, p, section, article {
 
 .hero {
     position: relative;
-}
-
-.hero img {
-    width: 100%;
-    height: auto;
-    display: block;
 }
 
 h1 {
@@ -58,6 +86,19 @@ h1 {
     padding: 0px;
 }
 
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero article img {
+    float: right;
+    width: 150px;
+    height: auto;
+    margin: 5px;
+}
+
 article {
     position: absolute;
     background-color: var(--accent2-color);
@@ -67,9 +108,85 @@ article {
     color: white;
 }
 
-.hero article img {
-    float: right;
-    width: 150px;
-    height: auto;
-    margin: 5px;
+/*fix or add images here*/
+.history {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    gap: 15px;
 }
+    .history h2 {
+        grid-column: 1 / 4;
+        text-align: center;
+        font-size: 2rem;
+    }
+    .history img {
+        width: 200px;
+        height: auto;
+        grid-column: 2 / 3;
+        align-items: center;
+        margin: 16px 0 16px 0;
+    }
+    #left p {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    #right p {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+    }
+
+.adventures {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+    .adventures h2 {
+        grid-column: 1 / 6;
+        text-align: center;
+        font-size: 2rem;
+    }
+    .adventures figure {
+        align-items: center;
+        margin: 0 auto;
+        width: 140px;
+        
+    }
+    .adventures img {
+        width: 140px;
+        height: auto;
+        
+        align-items: center;
+    }
+    .adventures figcaption {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding: 1rem;
+}
+footer p {
+    text-align: center;
+    margin: 0;
+    grid-column: 2 / 3;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 10px;
+    grid-column: 3 / 4;
+}
+
+.socialmedia a {
+    align-items: center;
+}
+.socialmedia img {
+    width: 40px;
+    height: auto;
+    margin: 0 10px;
+    align-items: center;
+}
+
