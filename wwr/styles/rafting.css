@@ -126,13 +126,13 @@ article {
         align-items: center;
         margin: 16px 0 16px 0;
     }
-    #left p {
+    #leftp {
         grid-column: 1 / 2;
-        grid-row: 1 / 2;
+        grid-row: 2 / 3;
     }
-    #right p {
+    #rightp {
         grid-column: 3 / 4;
-        grid-row: 1 / 2;
+        grid-row: 2 / 3;
     }
 
 .adventures {
