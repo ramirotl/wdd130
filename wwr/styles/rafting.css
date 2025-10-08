@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #1e90ff;
-    --secondary-color: #ff6347;
+    --primary-color: #1e5aff; /*#1e90ff*/
+    --secondary-color: #e62416; /*#ff6347*/
     --accent1-color: #000000;
-    --accent2-color: #e6af16;
+    --accent2-color: #e6af16; /*#e6af16*/
     --heading-font: 'Arial Black', sans-serif;
     --body-font: arial, helvetica, sans-serif;
 }
@@ -78,7 +78,7 @@ h1, h2 {
 h1 {
     position: absolute;
     text-align: center;
-    background-color: var(--secondary-color);
+    background-color: var(--accent1-color); /*changed from secondary*/
     opacity: 0.7;
     width: 100%;
     color: #fff;
@@ -101,7 +101,7 @@ h1 {
 
 article {
     position: absolute;
-    background-color: var(--accent2-color);
+    background-color: var(--secondary-color);
     margin: 15px;
     padding: 0px;
     top: 60px;
@@ -189,4 +189,7 @@ footer p {
     margin: 0 10px;
     align-items: center;
 }
+
+/* Contac Us Page */
+
 
