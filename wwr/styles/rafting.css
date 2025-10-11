@@ -218,12 +218,14 @@ footer p {
 .user-input {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    gap: 20px;
     margin: 20px 0;
 }
 
 .user-input .map iframe {
     width: 100%;
+    height: 380px;
+    border:0; 
 }
 
 .user-input form {
