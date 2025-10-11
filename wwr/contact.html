@@ -23,17 +23,17 @@
         </nav>
     </header>
     <main>
-        <div class="hero">
+        <div class="contact-info">
             <h1>Cool Rapids Adventures</h1>
             <article>
-                <p>123 Main River Street<br>
-                    Kolob, California<br>
-                    +1 999 999 9999<br>
+                <p>456 Incahuara River Road<br>
+                    Caranavi, La Paz<br>
+                    +591 7777 6666<br>
                     info@coolrapids.com<br>
                 </p>
             </article>
         </div>
-        <section class="contact-info">
+        <section class="user-input">
             <div class="map">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d8197.718417556496!2d-67.61782385980382!3d-16.00853089420894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sbo!4v1759808623900!5m2!1ses!2sbo"
@@ -41,30 +41,38 @@
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <form>
-                <div>
+                <div class="form-item column2">
                     <label for="username">Name</label>
-                    <input type="text" id="username" name="name">
+                    <input type="text" id="username" name="name" placeholder="Jhon Doe">
                 </div>
-                <div>
+                <div class="form-item column2">
                     <label for="useremail">Email</label>
-                    <input type="email" id="useremail" name="email">
+                    <input type="email" id="useremail" name="email" placeholder="jhon123@rapids.com">
                 </div>
-                <legend>Message Purpose</legend>
-                <div>
-                    <input type="radio" id="inquiry" name="msgpurpose" value="inquiry">
-                    <label for="inquiry">General Inquiry</label><br>
-                    <input type="radio" id="question" name="msgpurpose" value="question">
-                    <label for="question">Reservation Question</label><br>
-                    <input type="radio" id="suggestion" name="msgpurpose" value="suggestion">
-                    <label for="suggestion">Website Suggestion</label><br>
+                <div class="msgpurpose column2">
+                    <legend>Message Purpose</legend>
+                    <div class="radio">
+                        <div class="inquiry">
+                            <input type="radio" id="inquiry" name="msgpurpose" value="inquiry">
+                            <label for="inquiry">General Inquiry</label><br>
+                        </div>
+                        <div class="question">
+                            <input type="radio" id="question" name="msgpurpose" value="question">
+                            <label for="question">Reservation Question</label><br>
+                        </div>
+                        <div class="suggestion">
+                            <input type="radio" id="suggestion" name="msgpurpose" value="suggestion">
+                            <label for="suggestion">Website Suggestion</label><br>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <label for="usermsg">Message</label>
-                    <textarea name="message" id="usermsg" rows="3" placeholder="Type here"></textarea>
+                <div class="usermsg">
+                    <label for="usermsg">Message</label><br>
+                    <textarea name="message" id="usermsg" rows="5" placeholder="Type here"></textarea>
                 </div>
-                <div>
+                <div class="subscribe">
+                    <input type="checkbox" id="subscribe" name="subscribe" checked>
                     <label for="subscribe">Please Subscribe me to the monthly newsletter</label>
-                    <input type="checkbox" id="subscribe" name="subscribe">
                 </div>
                 <button type="submit">Get in Touch!</button>
             </form>
@@ -72,24 +80,16 @@
         <section class="service">
             <h2>We Are Here to Serve You</h2>
             <figure>
-                <img src="images/adventure01.jpg" alt="This picture shows the Great Views">
-                <figcaption>Employee Profile</figcaption>
+                <img src="images/employee1.jpg" alt="This picture shows the Great Views">
+                <figcaption>Juan Perez Manager</figcaption>
             </figure>
             <figure>
-                <img src="images/adventure02.jpg" alt="This picture shows the Amazing Landscapes">
-                <figcaption>Employee Profile</figcaption>
+                <img src="images/employee2.jpg" alt="This picture shows the Amazing Landscapes">
+                <figcaption>Maria Becerra Instructor</figcaption>
             </figure>
             <figure>
-                <img src="images/adventure03.jpg" alt="This picture shows the Half Day Adventure">
-                <figcaption>Employee Profile</figcaption>
-            </figure>
-            <figure>
-                <img src="images/adventure04.jpg" alt="This picture shows the Very Safe Equipment">
-                <figcaption>Very Safe Equipment</figcaption>
-            </figure>
-            <figure>
-                <img src="images/adventure05.jpg" alt="This picture shows La Muela del Diablo">
-                <figcaption>La Muela del Diablo</figcaption>
+                <img src="images/employee3.jpg" alt="This picture shows the Half Day Adventure">
+                <figcaption>Julieta Venegas Receptionist</figcaption>
             </figure>
         </section>
     </main>
