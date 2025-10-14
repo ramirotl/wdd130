@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #1e5aff; /*#1e90ff*/
+    --primary-color: #0044ff; /*#1e90ff #1e5aff*/
     --secondary-color: #e62416; /*#ff6347*/
     --accent1-color: #000000;
-    --accent2-color: #e6af16; /*#e6af16*/
+    --accent2-color: #ffeb78; /*#e6af16*/
     --heading-font: 'Arial Black', sans-serif;
     --body-font: arial, helvetica, sans-serif;
 }
@@ -322,4 +322,199 @@ button {
 button:hover {
     background-color: orangered;
     cursor: pointer;
+}
+
+/* --- Home Page Styles --- */
+
+/* Newsletter section */
+
+/* edit h1? */
+.newsletter {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+/* edit form input */
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+} 
+
+.newsletter form div {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+.newsletter input {
+  padding: 0.5rem;
+  border: 3px solid #ccc;
+  border-radius: 5px;
+}
+
+.newsletter button {
+  margin-top: 1rem;
+  padding: 0.7rem 1.2rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.newsletter button:hover {
+  background-color: var(--secondary-color);
+}
+
+/* CTA section */
+.cta {
+  text-align: center;
+  background-color: var(--accent2-color);
+  color: var(--accent1-color);
+  padding: 2rem 1rem;
+  margin: 2rem 0;
+  border-radius: 10px;
+}
+.cta-button {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+.cta-button:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Offerings grid */
+.offerings {
+  margin: 2rem 0;
+}
+.offerings h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.offer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  align-items: center;
+}
+.offer-grid figure img {
+  width: 100%;
+  border-radius: 10px;
+}
+.offer-grid figcaption {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+.offer-grid article {
+  padding: 1rem;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+}
+.offer-grid h3 {
+  color: var(--primary-color);
+}
+
+
+/* Trips section */
+
+/* HERO SECTION */
+.hero-trips {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.hero-text {
+  position: absolute;
+  bottom: 30px;
+  text-align: center;
+  width: 100%;
+  color: white;
+  font-size: 2rem;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.25em 0;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Cta */
+.cta-trips {
+  text-align: center;
+  padding: 2em 1em;
+  background-color: #f2f9ff;
+}
+
+.cta-trips .btn {
+  display: inline-block;
+  margin-top: 1em;
+  padding: 0.7em 1.2em;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.cta-trips .btn:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Trips Grid */
+.trip-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5em;
+  padding: 2em;
+}
+
+.trip {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.trip img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.trip-info {
+  padding: 1em;
+}
+
+/* Trip Table */
+.trip-table {
+  padding: 2em;
+  text-align: center;
+}
+
+.trip-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1em;
+}
+
+.trip-table th, .trip-table td {
+  border: 1px solid #ccc;
+  padding: 0.8em;
+}
+
+.trip-table th {
+  background-color: var(--accent2-color);
+  color: var(--accent1-color);
 }
